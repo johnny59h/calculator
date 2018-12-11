@@ -1,6 +1,8 @@
+
+
 {
- "name": "Little Alchemy 2",
-  "short_name": "Alchemy 2",
+ "name": "Calculator",
+  "short_name": "Calc",
   "icons": [
     {
       "src": "splashscreens/touch-icon-iphone.png",
@@ -47,6 +49,5 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "scope": "index.html",
-  "orientation": "landscape",
   "theme_color": "#ffffff"
 }
