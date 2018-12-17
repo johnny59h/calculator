@@ -37,29 +37,39 @@
 		<button class="button function" onclick="Calculator.clearMem();">mc</button>
 		<button class="button function" onclick="Calculator.recallMem();">mr</button>
 		<button class="button function" onclick="Calculator.saveMem();">ms</button>
-		<button class="button operator" onclick="Calculator.type('/')">/</button>
+		<button class="button function" onclick="Calculator.display('')">C</button>
 		<button class="button number" onclick="Calculator.type('7')">7</button>
 		<button class="button number" onclick="Calculator.type('8')">8</button>
 		<button class="button number" onclick="Calculator.type('9')">9</button>
-		<button class="button operator" onclick="Calculator.type('*')">×</button>
+		<button class="button operator" onclick="Calculator.type('/')">/</button>
 		<button class="button number" onclick="Calculator.type('4')">4</button>
 		<button class="button number" onclick="Calculator.type('5')">5</button>
 		<button class="button number" onclick="Calculator.type('6')">6</button>
-		<button class="button operator" onclick="Calculator.type('-')">-</button>
+		<button class="button operator" onclick="Calculator.type('*')">×</button>
 		<button class="button number" onclick="Calculator.type('1')">1</button>
 		<button class="button number" onclick="Calculator.type('2')">2</button>
 		<button class="button number" onclick="Calculator.type('3')">3</button>
-		<button class="button operator" onclick="Calculator.type('+')">+</button>
+		<button class="button operator" onclick="Calculator.type('-')">-</button>
 		<button class="button number" onclick="Calculator.type('0')">0</button>
 		<button class="button number" onclick="Calculator.type('.')">.</button>
-		<button class="button function" onclick="Calculator.display('')">C</button>
+		<button class="button number" onclick="Calculator.type(Math.PI)">π</button>
+		<button class="button operator" onclick="Calculator.type('+')">+</button>
+		<button class="button number" onclick="Calculator.type(Math.E)">e</button>
+		<button class="button number" onclick="Calculator.type('(')">(</button>
+		<button class="button number" onclick="Calculator.type(')')">)</button>
+		<button class="button operator" onclick="Calculator.type('**')">xʸ</button>
+		<button class="button operator" onclick="Calculator.type('Math.sin(')">sin()</button>
+		<button class="button operator" onclick="Calculator.type('Math.cos(')">cos()</button>
+		<button class="button operator" onclick="Calculator.type('Math.tan(')">tan()</button>
+		<button class="button operator" onclick="Calculator.type('**(1/')">ʸ√x</button>
+
 		<button class="button operator" onclick="Calculator.e()">=</button>
 	</div>
 <script>
 if ('serviceWorker' in navigator) {
 	window.addEventListener('load', function() {
 		navigator.serviceWorker.register('sw.js').then(function(registration) {
-		// Registration was successful
+		// Registration was succesfuuulsful
 		console.log('ServiceWorker registration successful with scope: ', registration.scope);
 	}, function(err) {
 		// registration failed :(

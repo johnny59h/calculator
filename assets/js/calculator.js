@@ -16,13 +16,18 @@ var Calculator = {
 		// change the display
 		document.getElementById("d").value = val;
 	},
+
 	type: function(val) {
+
 		// type numbers and operators
-		document.getElementById("d").value += val;
+
+			document.getElementById("d").value += val;
+
 	},
 	e: function() {
 		// evaluate the equation
 		try {
+			
 			this.display(eval(document.getElementById("d").value));
 		}
 		catch(err) {
@@ -70,7 +75,7 @@ var Calculator = {
 	clearMem: function() {
 		// check if browser supports localStorage
 		if (hasLocalStorage()) {
-			localStorage.removeItem("memory");
+			localStorage.removeItem("CalculatorData");
 		}
 
 		// temporarily hold what was displayed
