@@ -8,6 +8,10 @@ A very simple calculator, built as a Progressive Web App.
 
 ### Changelog
 
+**Version 1.1.1**
+
+- fix splash icons
+
 **Version 1.1.0**
 
 - added Cos, tan, sin Buttons
